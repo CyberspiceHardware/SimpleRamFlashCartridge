@@ -258,9 +258,9 @@ Entry Wire Line
 Entry Wire Line
 	3700 2350 3800 2250
 Text Label 3450 2050 0    50   ~ 0
-A11
-Text Label 3450 2250 0    50   ~ 0
 A10
+Text Label 3450 2250 0    50   ~ 0
+A11
 Text Label 3450 2350 0    50   ~ 0
 A9
 Text Label 2600 2350 0    50   ~ 0
@@ -374,17 +374,6 @@ F 1 "100nF" H 9215 1855 50  0000 L CNN
 F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 9138 1750 50  0001 C CNN
 F 3 "~" H 9100 1900 50  0001 C CNN
 	1    9100 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C2
-U 1 1 61CFA930
-P 9550 1900
-F 0 "C2" H 9665 1946 50  0000 L CNN
-F 1 "100nF" H 9665 1855 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D7.5mm_W2.5mm_P5.00mm" H 9588 1750 50  0001 C CNN
-F 3 "~" H 9550 1900 50  0001 C CNN
-	1    9550 1900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -768,7 +757,7 @@ L Device:R_Small R1
 U 1 1 61DAA3AD
 P 4750 2550
 F 0 "R1" H 4600 2600 50  0000 L CNN
-F 1 "10K" H 4550 2500 50  0000 L CNN
+F 1 "4K7" H 4550 2500 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal" H 4750 2550 50  0001 C CNN
 F 3 "~" H 4750 2550 50  0001 C CNN
 	1    4750 2550
@@ -806,4 +795,15 @@ Wire Bus Line
 	3800 1050 3800 3550
 Wire Bus Line
 	4950 1050 4950 3000
+$Comp
+L Device:C_Polarized C2
+U 1 1 61F585C5
+P 9550 1900
+F 0 "C2" H 9668 1946 50  0000 L CNN
+F 1 "10uF" H 9668 1855 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.50mm" H 9588 1750 50  0001 C CNN
+F 3 "~" H 9550 1900 50  0001 C CNN
+	1    9550 1900
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
